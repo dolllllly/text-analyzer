@@ -1,0 +1,69 @@
+Text Analyzer – Python Package
+
+A simple Python text analysis project that demonstrates packages, modules, imports, and code reusability. It cleans text and generates a report containing the total number of words, characters, and vowels.
+
+Features
+Converts text to lowercase.
+Normalizes whitespace by removing extra spaces, tabs, and newlines.
+Counts the total number of words.
+Counts characters, including single spaces between words.
+Counts vowels (a, e, i, o, u).
+Generates a formatted text analysis report.
+Uses a Python package to organize code into separate modules.
+Uses a main guard to prevent input prompts from running during imports.
+Project Structure
+text_analyzer/
+├── main.py
+├── analyzer/
+│   ├── __init__.py
+│   ├── cleaning.py
+│   ├── metrics.py
+│   └── report.py
+└── README.md
+Technologies Used
+Python
+Python Modules and Packages
+Functions and Imports
+How It Works
+The user enters a text string in main.py.
+cleaning.py converts the text to lowercase and normalizes whitespace.
+metrics.py calculates the word count, character count, and vowel count.
+report.py combines the results into a formatted report.
+__init__.py exposes the selected functions for convenient importing.
+How to Run
+
+Step 1: Open the terminal in the project directory.
+
+Step 2: Run the following command:
+
+python main.py
+
+Step 3: Enter your text when prompted.
+
+Example
+
+Input:
+
+pYTHon IS fuN
+
+Output:
+
+----------------text report--------------------------
+cleaned text: python is fun
+total words: 3
+total characters: 13
+total vowels: 3
+Concepts Demonstrated
+Python packages and modules
+The __init__.py file
+Relative and package imports
+Functions and separation of responsibilities
+String manipulation
+List and generator expressions
+The if __name__ == "__main__": main guard
+Learning Outcome
+
+This project demonstrates how to build a small, reusable Python package by separating text cleaning, metric calculations, and report generation into individual modules.
+
+Author
+Dolly Behera
